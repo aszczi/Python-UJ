@@ -1,0 +1,2837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee5fd480e73b73b320df9703e1428639 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ee5fd480e73b73b320df9703e1428639" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ee5fd480e73b73b320df9703e1428639 = L.map(
+                "map_ee5fd480e73b73b320df9703e1428639",
+                {
+                    center: [50.06, 19.95],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e932554cfc1faf5db1e17e76981a9549 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e932554cfc1faf5db1e17e76981a9549.addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            var poly_line_4045eb6e2b81146c75530ff202456e17 = L.polyline(
+                [[50.094815, 20.065271], [50.0920145, 20.0611215], [50.0899385, 20.059185], [50.0869575, 20.047584], [50.0851575, 20.03812], [50.0820635, 20.0323715], [50.0795935, 20.027378749999997], [50.0756805, 20.02051], [50.07326025, 20.01737825], [50.0693085, 20.0124665], [50.067375, 20.0053765], [50.06558, 19.996906], [50.064302, 19.9895275], [50.0607165, 19.9790985], [50.0596095, 19.976317], [50.060344, 19.970722], [50.060087, 19.9670875], [50.0588425, 19.9624515], [50.05769175, 19.9590572499999], [50.0586585, 19.948766], [50.05709225, 19.9454942499999], [50.059447, 19.9422653333333], [50.0591165, 19.9378685], [50.058848, 19.9334355], [50.0552485, 19.9275805], [50.0534175, 19.921883], [50.05268733333333, 19.915391333333336], [50.05268733333333, 19.915391333333336]],
+                {"bubblingMouseEvents": true, "color": "#e41a1c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e41a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_4045eb6e2b81146c75530ff202456e17.bindTooltip(
+                `<div>
+                     Linia 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_eef71fad722fbdadde21967d05daca87 = L.polyline(
+                [[50.015608, 20.023053], [50.0160115, 20.0196425], [50.016223, 20.012662], [50.016555, 20.0075375], [50.014514, 20.0], [50.017586, 19.9910465], [50.0194585, 19.987982], [50.02332925, 19.97986075], [50.026925, 19.976899], [50.033054, 19.970686], [50.0388375, 19.9647335], [50.042139, 19.961074], [50.0466605, 19.955064], [50.051273, 19.9509465], [50.053548, 19.948504], [50.05709225, 19.9454942499999], [50.059447, 19.9422653333333], [50.06464975, 19.9450517499999], [50.0678285, 19.945381], [50.0710865, 19.9450522499999], [50.07530066666667, 19.94011733333333], [50.0807095, 19.937802], [50.0841875, 19.9338715], [50.08869966666666, 19.932395333333332]],
+                {"bubblingMouseEvents": true, "color": "#377eb8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377eb8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_eef71fad722fbdadde21967d05daca87.bindTooltip(
+                `<div>
+                     Linia 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_768556251e7957e132e6352ddad54af3 = L.polyline(
+                [[50.094815, 20.065271], [50.0920145, 20.0611215], [50.0899385, 20.059185], [50.08735, 20.059649999999998], [50.0877045, 20.064344499999997], [50.083559, 20.065577], [50.07922333333333, 20.065642333333333], [50.076195, 20.0524635], [50.0747195, 20.046887], [50.072126, 20.037350250000003], [50.0722845, 20.0291585], [50.07326025, 20.01737825], [50.074014, 20.0113655], [50.0742875, 20.0046685], [50.073991, 19.9987475], [50.0735295, 19.990363], [50.067719, 19.9775915], [50.0665315, 19.969834], [50.0654762, 19.959377], [50.06522266666666, 19.9516065], [50.06464975, 19.9450517499999], [50.0664023333333, 19.93874433333333], [50.0637805, 19.932976], [50.0667945, 19.9291345], [50.0691565, 19.926439], [50.071918, 19.919502], [50.072976, 19.91556], [50.0741915, 19.910391], [50.075616, 19.9063225], [50.0776105, 19.90107566666667], [50.0790455, 19.8972805], [50.0814275, 19.8891455], [50.08179, 19.88192]],
+                {"bubblingMouseEvents": true, "color": "#4daf4a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4daf4a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_768556251e7957e132e6352ddad54af3.bindTooltip(
+                `<div>
+                     Linia 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_48d8d563acbbdc51dc5f1306d51eef1d = L.polyline(
+                [[50.094815, 20.065271], [50.0920145, 20.0611215], [50.0899385, 20.059185], [50.0869575, 20.047584], [50.0851575, 20.03812], [50.0820635, 20.0323715], [50.0795935, 20.027378749999997], [50.0756805, 20.02051], [50.07326025, 20.01737825], [50.074014, 20.0113655], [50.0742875, 20.0046685], [50.073991, 19.9987475], [50.0735295, 19.990363], [50.072026, 19.985007], [50.067719, 19.9775915], [50.0665315, 19.969834], [50.0654762, 19.959377], [50.0682285, 19.947645], [50.0710865, 19.9450522499999], [50.07530066666667, 19.94011733333333], [50.0807095, 19.937802], [50.0841875, 19.9338715], [50.08869966666666, 19.932395333333332]],
+                {"bubblingMouseEvents": true, "color": "#984ea3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#984ea3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_48d8d563acbbdc51dc5f1306d51eef1d.bindTooltip(
+                `<div>
+                     Linia 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ff5b42b91dc22fa9691bf766497fe272 = L.polyline(
+                [[50.013101, 19.927021], [50.014576, 19.927837], [50.0161555, 19.9295865], [50.02118325, 19.9322625], [50.0300595, 19.93620850000001], [50.033297, 19.938543], [50.036443, 19.940579], [50.0415625, 19.9431905], [50.043896, 19.946986666666668], [50.048071, 19.943437], [50.05172866666666, 19.9418806666666], [50.054407, 19.9394625], [50.059447, 19.9422653333333], [50.06464975, 19.9450517499999], [50.0664023333333, 19.93874433333333], [50.0637805, 19.932976], [50.0667945, 19.9291345], [50.0691565, 19.926439], [50.071918, 19.919502], [50.072976, 19.91556], [50.0741915, 19.910391], [50.075616, 19.9063225], [50.0776105, 19.90107566666667], [50.0790455, 19.8972805], [50.0814275, 19.8891455], [50.08179, 19.88192]],
+                {"bubblingMouseEvents": true, "color": "#ff7f00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_ff5b42b91dc22fa9691bf766497fe272.bindTooltip(
+                `<div>
+                     Linia 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b27b3493dc57c398a7c1b2d37af34663 = L.polyline(
+                [[50.0900595, 20.021375], [50.0844545, 20.02068], [50.0795935, 20.027378749999997], [50.0756805, 20.02051], [50.07326025, 20.01737825], [50.074014, 20.0113655], [50.0742875, 20.0046685], [50.073991, 19.9987475], [50.0735295, 19.990363], [50.067719, 19.9775915], [50.0665315, 19.969834], [50.0654762, 19.959377], [50.05769175, 19.9590572499999], [50.0498255, 19.964682], [50.048996, 19.967597], [50.044552, 19.9735755], [50.040638, 19.978084], [50.04033866666666, 19.98299666666667], [50.033512, 19.977071], [50.026925, 19.976899], [50.02332925, 19.97986075], [50.0194585, 19.987982], [50.017586, 19.9910465], [50.014514, 20.0], [50.016555, 20.0075375], [50.016223, 20.012662], [50.0160115, 20.0196425], [50.015608, 20.023053]],
+                {"bubblingMouseEvents": true, "color": "#a65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_b27b3493dc57c398a7c1b2d37af34663.bindTooltip(
+                `<div>
+                     Linia 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d1dcff156fb2a0a308ae0ea66a525926 = L.polyline(
+                [[50.072893, 20.11689], [50.071926, 20.104577], [50.0688356, 20.0990645], [50.0691235, 20.091682], [50.064674999999994, 20.08463], [50.064927, 20.074984], [50.0665265, 20.0710595], [50.0677575, 20.0649305], [50.067491, 20.059864], [50.0685425, 20.052587], [50.0697585, 20.0458415], [50.072126, 20.037350250000003], [50.0722845, 20.0291585], [50.07326025, 20.01737825], [50.074014, 20.0113655], [50.0742875, 20.0046685], [50.073991, 19.9987475], [50.0735295, 19.990363], [50.067719, 19.9775915], [50.0665315, 19.969834], [50.0654762, 19.959377], [50.05769175, 19.9590572499999], [50.0586585, 19.948766], [50.05709225, 19.9454942499999], [50.05172866666666, 19.9418806666666], [50.048071, 19.943437], [50.043896, 19.946986666666668], [50.0415625, 19.9431905], [50.036443, 19.940579], [50.033297, 19.938543], [50.0300595, 19.93620850000001], [50.024577, 19.933922], [50.02118325, 19.9322625], [50.01778, 19.936295], [50.015085, 19.94437], [50.01380749999999, 19.9492075]],
+                {"bubblingMouseEvents": true, "color": "#f781bf", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f781bf", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_d1dcff156fb2a0a308ae0ea66a525926.bindTooltip(
+                `<div>
+                     Linia 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5bddfa034911890108facefe38029310 = L.polyline(
+                [[50.040064, 20.001498], [50.0404875, 19.9917585], [50.04033866666666, 19.98299666666667], [50.033512, 19.977071], [50.026925, 19.976899], [50.02332925, 19.97986075], [50.0183485, 19.9775505], [50.0154645, 19.971589], [50.013446, 19.9646595], [50.012381, 19.9563235], [50.01380749999999, 19.9492075], [50.01380749999999, 19.9492075], [50.015085, 19.94437], [50.01778, 19.936295], [50.02118325, 19.9322625], [50.0161555, 19.9295865], [50.014576, 19.927837], [50.013101, 19.927021]],
+                {"bubblingMouseEvents": true, "color": "#999999", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#999999", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_5bddfa034911890108facefe38029310.bindTooltip(
+                `<div>
+                     Linia 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_69916db36f911b859410d909b9c26c26 = L.polyline(
+                [[50.015608, 20.023053], [50.0160115, 20.0196425], [50.016223, 20.012662], [50.016555, 20.0075375], [50.014514, 20.0], [50.017586, 19.9910465], [50.0194585, 19.987982], [50.02332925, 19.97986075], [50.026925, 19.976899], [50.033054, 19.970686], [50.0388375, 19.9647335], [50.042139, 19.961074], [50.045068, 19.9553965], [50.043896, 19.946986666666668], [50.048071, 19.943437], [50.05172866666666, 19.9418806666666], [50.054407, 19.9394625], [50.0585565, 19.940913], [50.0591165, 19.9378685], [50.058848, 19.9334355], [50.0552485, 19.9275805], [50.0534175, 19.921883], [50.05268733333333, 19.915391333333336], [50.05268733333333, 19.915391333333336]],
+                {"bubblingMouseEvents": true, "color": "#66c2a5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#66c2a5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_69916db36f911b859410d909b9c26c26.bindTooltip(
+                `<div>
+                     Linia 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0f7b1d6e278159ab669f7cae64522215 = L.polyline(
+                [[50.094406, 20.000154], [50.093708, 20.0044055], [50.0943635, 20.0112615], [50.0923595, 20.0157645], [50.0900595, 20.021375], [50.0844545, 20.02068], [50.0795935, 20.027378749999997], [50.0756805, 20.02051], [50.07326025, 20.01737825], [50.0693085, 20.0124665], [50.067375, 20.0053765], [50.06558, 19.996906], [50.064302, 19.9895275], [50.0607165, 19.9790985], [50.0596095, 19.976317], [50.060344, 19.970722], [50.060087, 19.9670875], [50.0588425, 19.9624515], [50.05769175, 19.9590572499999], [50.0654762, 19.959377], [50.06522266666666, 19.9516065], [50.06464975, 19.9450517499999], [50.0664023333333, 19.93874433333333], [50.069662, 19.9375175], [50.073499, 19.936541], [50.07530066666667, 19.94011733333333]],
+                {"bubblingMouseEvents": true, "color": "#fc8d62", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fc8d62", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_0f7b1d6e278159ab669f7cae64522215.bindTooltip(
+                `<div>
+                     Linia 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b217aa06c18d1d7f290d78d9eb476c82 = L.polyline(
+                [[50.017986, 19.889106], [50.020601, 19.8978135], [50.0243645, 19.90174], [50.027111, 19.905653], [50.029969, 19.912678], [50.03173, 19.920687], [50.030765, 19.924839], [50.0345318, 19.9260281], [50.0407784, 19.9246065], [50.0449055, 19.9221572], [50.0467011, 19.92548], [50.0485739, 19.9312312], [50.050482, 19.9380481], [50.05172866666666, 19.9418806666666], [50.054407, 19.9394625], [50.059447, 19.9422653333333], [50.06464975, 19.9450517499999], [50.0664023333333, 19.93874433333333], [50.069662, 19.9375175], [50.073499, 19.936541], [50.07530066666667, 19.94011733333333], [50.0807095, 19.937802], [50.0841875, 19.9338715], [50.08869966666666, 19.932395333333332], [50.093975, 19.92994], [50.09492, 19.93503], [50.096075, 19.94172], [50.09591, 19.947835], [50.095095, 19.9542], [50.097835, 19.956065], [50.101765, 19.957365], [50.104864, 19.96247]],
+                {"bubblingMouseEvents": true, "color": "#8da0cb", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8da0cb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_b217aa06c18d1d7f290d78d9eb476c82.bindTooltip(
+                `<div>
+                     Linia 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_68e8bcc9314efdd79da6dd04a488a68e = L.polyline(
+                [[50.040064, 20.001498], [50.0404875, 19.9917585], [50.04033866666666, 19.98299666666667], [50.040638, 19.978084], [50.044552, 19.9735755], [50.048996, 19.967597], [50.0498255, 19.964682], [50.05769175, 19.9590572499999], [50.0654762, 19.959377], [50.06522266666666, 19.9516065], [50.06464975, 19.9450517499999], [50.0664023333333, 19.93874433333333], [50.0637805, 19.932976], [50.0667945, 19.9291345], [50.0691565, 19.926439], [50.071918, 19.919502], [50.072976, 19.91556], [50.0741915, 19.910391], [50.075616, 19.9063225], [50.0776105, 19.90107566666667]],
+                {"bubblingMouseEvents": true, "color": "#e78ac3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e78ac3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_68e8bcc9314efdd79da6dd04a488a68e.bindTooltip(
+                `<div>
+                     Linia 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ab6d12e80d24990edaea26c8190ceef8 = L.polyline(
+                [[50.072893, 20.11689], [50.071926, 20.104577], [50.0698535, 20.094966499999998], [50.0691235, 20.091682], [50.064674999999994, 20.08463], [50.064927, 20.074984], [50.0665265, 20.0710595], [50.069839, 20.066868], [50.07922333333333, 20.065642333333333], [50.076195, 20.0524635], [50.0747195, 20.046887], [50.072126, 20.037350250000003], [50.0766885, 20.0311815], [50.0795935, 20.027378749999997], [50.0844545, 20.02068], [50.0900595, 20.021375], [50.0923595, 20.0157645], [50.0957755, 20.0126755], [50.098194, 20.0130345], [50.101977, 20.012058]],
+                {"bubblingMouseEvents": true, "color": "#a6d854", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a6d854", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_ab6d12e80d24990edaea26c8190ceef8.bindTooltip(
+                `<div>
+                     Linia 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a205da079e6c7436ebad8f5f664d55ec = L.polyline(
+                [[50.013101, 19.927021], [50.014576, 19.927837], [50.0161555, 19.9295865], [50.02118325, 19.9322625], [50.0300595, 19.93620850000001], [50.033297, 19.938543], [50.036443, 19.940579], [50.0415625, 19.9431905], [50.043896, 19.946986666666668], [50.0466605, 19.955064], [50.051273, 19.9509465], [50.053548, 19.948504], [50.05709225, 19.9454942499999], [50.0586585, 19.948766], [50.05769175, 19.9590572499999], [50.0588425, 19.9624515], [50.060087, 19.9670875], [50.060344, 19.970722], [50.0596095, 19.976317], [50.0607165, 19.9790985], [50.064302, 19.9895275], [50.06558, 19.996906], [50.067375, 20.0053765], [50.0693085, 20.0124665], [50.07326025, 20.01737825], [50.0722845, 20.0291585], [50.072126, 20.037350250000003], [50.0747195, 20.046887], [50.076195, 20.0524635], [50.07922333333333, 20.065642333333333], [50.069839, 20.066868]],
+                {"bubblingMouseEvents": true, "color": "#ffd92f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffd92f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_a205da079e6c7436ebad8f5f664d55ec.bindTooltip(
+                `<div>
+                     Linia 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a7db3a32f16ab8d83648d9be1c88a7c8 = L.polyline(
+                [[50.01380749999999, 19.9492075], [50.012381, 19.9563235], [50.013446, 19.9646595], [50.0154645, 19.971589], [50.0183485, 19.9775505], [50.02332925, 19.97986075], [50.026925, 19.976899], [50.033054, 19.970686], [50.0388375, 19.9647335], [50.042139, 19.961074], [50.0466605, 19.955064], [50.051273, 19.9509465], [50.053548, 19.948504], [50.05709225, 19.9454942499999], [50.059447, 19.9422653333333], [50.06464975, 19.9450517499999], [50.0664023333333, 19.93874433333333], [50.0637805, 19.932976], [50.0667945, 19.9291345], [50.0691565, 19.926439], [50.071918, 19.919502], [50.072976, 19.91556], [50.0741915, 19.910391], [50.075616, 19.9063225], [50.0776105, 19.90107566666667], [50.0790455, 19.8972805], [50.0814275, 19.8891455], [50.08179, 19.88192]],
+                {"bubblingMouseEvents": true, "color": "#e5c494", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e5c494", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_a7db3a32f16ab8d83648d9be1c88a7c8.bindTooltip(
+                `<div>
+                     Linia 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3876ee6c0131f0c95ae3a54ef986fe72 = L.polyline(
+                [[50.104864, 19.96247], [50.101765, 19.957365], [50.097835, 19.956065], [50.095095, 19.9542], [50.09591, 19.947835], [50.096075, 19.94172], [50.09492, 19.93503], [50.093975, 19.92994], [50.08869966666666, 19.932395333333332], [50.0841875, 19.9338715], [50.0807095, 19.937802], [50.07530066666667, 19.94011733333333], [50.0710865, 19.9450522499999], [50.0682285, 19.947645], [50.0654762, 19.959377], [50.05769175, 19.9590572499999], [50.0498255, 19.964682], [50.048996, 19.967597], [50.044552, 19.9735755], [50.040638, 19.978084], [50.04033866666666, 19.98299666666667], [50.033512, 19.977071], [50.026925, 19.976899], [50.02332925, 19.97986075], [50.0183485, 19.9775505], [50.0154645, 19.971589], [50.013446, 19.9646595], [50.012381, 19.9563235], [50.01380749999999, 19.9492075], [50.01380749999999, 19.9492075], [50.015085, 19.94437], [50.01778, 19.936295], [50.02118325, 19.9322625], [50.0161555, 19.9295865], [50.014576, 19.927837], [50.013101, 19.927021]],
+                {"bubblingMouseEvents": true, "color": "#b3b3b3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#b3b3b3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_3876ee6c0131f0c95ae3a54ef986fe72.bindTooltip(
+                `<div>
+                     Linia 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d9e27f3b7c594bc8162cb2c124b651d6 = L.polyline(
+                [[50.017986, 19.889106], [50.020601, 19.8978135], [50.0243645, 19.90174], [50.027111, 19.905653], [50.029969, 19.912678], [50.03173, 19.920687], [50.030765, 19.924839], [50.0345318, 19.9260281], [50.0407784, 19.9246065], [50.0449055, 19.9221572], [50.0467011, 19.92548], [50.0485739, 19.9312312], [50.050482, 19.9380481], [50.05172866666666, 19.9418806666666], [50.05709225, 19.9454942499999], [50.059447, 19.9422653333333], [50.06464975, 19.9450517499999], [50.06522266666666, 19.9516065], [50.0654762, 19.959377], [50.0665315, 19.969834], [50.067719, 19.9775915], [50.0735295, 19.990363], [50.073991, 19.9987475], [50.0742875, 20.0046685], [50.074014, 20.0113655], [50.07326025, 20.01737825], [50.0756805, 20.02051], [50.0795935, 20.027378749999997], [50.0844545, 20.02068], [50.0900595, 20.021375], [50.0923595, 20.0157645], [50.0957755, 20.0126755], [50.098194, 20.0130345], [50.101977, 20.012058]],
+                {"bubblingMouseEvents": true, "color": "#e41a1c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e41a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            poly_line_d9e27f3b7c594bc8162cb2c124b651d6.bindTooltip(
+                `<div>
+                     Linia 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_783bcabc4b955f15c4c9b4f7240db75e = L.circleMarker(
+                [50.094815, 20.065271],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_783bcabc4b955f15c4c9b4f7240db75e.bindTooltip(
+                `<div>
+                     Wzgórza Krzesławickie – linie: 1, 4, 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d40b443428c7e81767a23438560cd5a = L.circleMarker(
+                [50.0920145, 20.0611215],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_6d40b443428c7e81767a23438560cd5a.bindTooltip(
+                `<div>
+                     Jarzębiny – linie: 1, 4, 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c8a1285f69b383ea784f1f4fc6ca305 = L.circleMarker(
+                [50.0899385, 20.059185],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1c8a1285f69b383ea784f1f4fc6ca305.bindTooltip(
+                `<div>
+                     Darwina – linie: 1, 4, 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86f3445a4248ec2b1753c02a5418ee67 = L.circleMarker(
+                [50.0869575, 20.047584],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_86f3445a4248ec2b1753c02a5418ee67.bindTooltip(
+                `<div>
+                     Wańkowicza – linie: 1, 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3764267f0c3b00cb53312cc3c3ba933 = L.circleMarker(
+                [50.0851575, 20.03812],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e3764267f0c3b00cb53312cc3c3ba933.bindTooltip(
+                `<div>
+                     Cienista – linie: 1, 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e104d9cfa0d10cd28f5d324ee2b3e8f7 = L.circleMarker(
+                [50.0820635, 20.0323715],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e104d9cfa0d10cd28f5d324ee2b3e8f7.bindTooltip(
+                `<div>
+                     Teatr Ludowy – linie: 1, 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e168d57834327d15deeb75ca17ad301 = L.circleMarker(
+                [50.0795935, 20.027378749999997],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1e168d57834327d15deeb75ca17ad301.bindTooltip(
+                `<div>
+                     Rondo Kocmyrzowskie im. Ks. Gorzelanego – linie: 1, 5, 9, 14, 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5e47739cf4eb9ab6fff810d8cb987ef = L.circleMarker(
+                [50.0756805, 20.02051],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e5e47739cf4eb9ab6fff810d8cb987ef.bindTooltip(
+                `<div>
+                     Bieńczycka – linie: 1, 5, 9, 14, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4e91b2f3ab7ee1f88778e0be6f6506d = L.circleMarker(
+                [50.07326025, 20.01737825],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_b4e91b2f3ab7ee1f88778e0be6f6506d.bindTooltip(
+                `<div>
+                     Rondo Czyżyńskie – linie: 1, 4, 5, 9, 10, 14, 22, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df0c838cd0db23950edb36389a4c6d86 = L.circleMarker(
+                [50.0693085, 20.0124665],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_df0c838cd0db23950edb36389a4c6d86.bindTooltip(
+                `<div>
+                     Gałczyńskiego – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7bada19dbc7f1c7d90e1589c29e56b6 = L.circleMarker(
+                [50.067375, 20.0053765],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_b7bada19dbc7f1c7d90e1589c29e56b6.bindTooltip(
+                `<div>
+                     Rondo 308. Dywizjonu – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c6715af64d2d1fbd89c9537bb3ba072 = L.circleMarker(
+                [50.06558, 19.996906],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4c6715af64d2d1fbd89c9537bb3ba072.bindTooltip(
+                `<div>
+                     Ogród Doświadczeń – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abe5952a803b9af76af239c848faafe6 = L.circleMarker(
+                [50.064302, 19.9895275],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_abe5952a803b9af76af239c848faafe6.bindTooltip(
+                `<div>
+                     TAURON Arena Kraków al. Pokoju – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0df00b58bfc143592a09ba41e8ee8008 = L.circleMarker(
+                [50.0607165, 19.9790985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_0df00b58bfc143592a09ba41e8ee8008.bindTooltip(
+                `<div>
+                     Dąbie – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97be9eca0edbba578bdb9cae0cdc9cc4 = L.circleMarker(
+                [50.0596095, 19.976317],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_97be9eca0edbba578bdb9cae0cdc9cc4.bindTooltip(
+                `<div>
+                     Ofiar Dąbia – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8442cae5cd8e2376884cc850636f5114 = L.circleMarker(
+                [50.060344, 19.970722],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_8442cae5cd8e2376884cc850636f5114.bindTooltip(
+                `<div>
+                     Fabryczna – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb259bdf837d279de541ce8550c35ba0 = L.circleMarker(
+                [50.060087, 19.9670875],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_eb259bdf837d279de541ce8550c35ba0.bindTooltip(
+                `<div>
+                     Nullo – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1669d2b4b49d2b31a244fdaed82f4d38 = L.circleMarker(
+                [50.0588425, 19.9624515],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1669d2b4b49d2b31a244fdaed82f4d38.bindTooltip(
+                `<div>
+                     Teatr Variété – linie: 1, 14, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f242ce5934eb64f1fd726fb59c3f7ce = L.circleMarker(
+                [50.05769175, 19.9590572499999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_3f242ce5934eb64f1fd726fb59c3f7ce.bindTooltip(
+                `<div>
+                     Rondo Grzegórzeckie – linie: 1, 9, 10, 14, 20, 22, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb61c971e8e0ef8bb6cdbce9ae99a15a = L.circleMarker(
+                [50.0586585, 19.948766],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bb61c971e8e0ef8bb6cdbce9ae99a15a.bindTooltip(
+                `<div>
+                     Hala Targowa – linie: 1, 10, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78559f9c93962ed1266e714f56055236 = L.circleMarker(
+                [50.05709225, 19.9454942499999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_78559f9c93962ed1266e714f56055236.bindTooltip(
+                `<div>
+                     Starowiślna – linie: 1, 3, 10, 22, 24, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5819235abaf6de05d80e8193cc8d5fd4 = L.circleMarker(
+                [50.059447, 19.9422653333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_5819235abaf6de05d80e8193cc8d5fd4.bindTooltip(
+                `<div>
+                     Poczta Główna – linie: 1, 3, 8, 18, 24, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5b892c969b3f280ca16786289ca82b0 = L.circleMarker(
+                [50.0591165, 19.9378685],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_d5b892c969b3f280ca16786289ca82b0.bindTooltip(
+                `<div>
+                     Plac Wszystkich Świętych – linie: 1, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_510f6e40fa81bbcbd9db6e6d6fac6714 = L.circleMarker(
+                [50.058848, 19.9334355],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_510f6e40fa81bbcbd9db6e6d6fac6714.bindTooltip(
+                `<div>
+                     Filharmonia – linie: 1, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d02e37a4e8d9eb3b170d02c1eaaa9e7e = L.circleMarker(
+                [50.0552485, 19.9275805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_d02e37a4e8d9eb3b170d02c1eaaa9e7e.bindTooltip(
+                `<div>
+                     Jubilat – linie: 1, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da731b1ec2f838948b891384ea510f76 = L.circleMarker(
+                [50.0534175, 19.921883],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_da731b1ec2f838948b891384ea510f76.bindTooltip(
+                `<div>
+                     Komorowskiego – linie: 1, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44bbaa234b1e79b6b04ed9b3d0d4148f = L.circleMarker(
+                [50.05268733333333, 19.915391333333336],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_44bbaa234b1e79b6b04ed9b3d0d4148f.bindTooltip(
+                `<div>
+                     Salwator – linie: 1, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_585fa8c8762f39f8c89e8b1620adb5f1 = L.circleMarker(
+                [50.015608, 20.023053],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_585fa8c8762f39f8c89e8b1620adb5f1.bindTooltip(
+                `<div>
+                     Nowy Bieżanów P+R – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48702b454865d2894865a0011cde9cb6 = L.circleMarker(
+                [50.0160115, 20.0196425],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_48702b454865d2894865a0011cde9cb6.bindTooltip(
+                `<div>
+                     Ćwiklińskiej – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7528ba492d7b50b7d0d7e1f218f475a = L.circleMarker(
+                [50.016223, 20.012662],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_a7528ba492d7b50b7d0d7e1f218f475a.bindTooltip(
+                `<div>
+                     Nowy Prokocim – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c81e71d26bd848436dfd9d45c4e8057 = L.circleMarker(
+                [50.016555, 20.0075375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_5c81e71d26bd848436dfd9d45c4e8057.bindTooltip(
+                `<div>
+                     Teligi – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8131a589950c960c17c9e0391ed08e7 = L.circleMarker(
+                [50.014514, 20.0],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_f8131a589950c960c17c9e0391ed08e7.bindTooltip(
+                `<div>
+                     Prokocim Szpital – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36fff4b16162d85d4b2c3fd8a0ede1ee = L.circleMarker(
+                [50.017586, 19.9910465],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_36fff4b16162d85d4b2c3fd8a0ede1ee.bindTooltip(
+                `<div>
+                     Prokocim – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a48497eb0a3f0cb5195437b68559abe = L.circleMarker(
+                [50.0194585, 19.987982],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1a48497eb0a3f0cb5195437b68559abe.bindTooltip(
+                `<div>
+                     Wlotowa – linie: 3, 9, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70e5aa0cb10dae1804996d39ea002e31 = L.circleMarker(
+                [50.02332925, 19.97986075],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_70e5aa0cb10dae1804996d39ea002e31.bindTooltip(
+                `<div>
+                     Bieżanowska – linie: 3, 9, 11, 13, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9202eafe02abf0addc1d1d79bbf8f95e = L.circleMarker(
+                [50.026925, 19.976899],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9202eafe02abf0addc1d1d79bbf8f95e.bindTooltip(
+                `<div>
+                     Kabel – linie: 3, 9, 11, 13, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfa25d78b5709df987f43563209cbfb4 = L.circleMarker(
+                [50.033054, 19.970686],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bfa25d78b5709df987f43563209cbfb4.bindTooltip(
+                `<div>
+                     Dworcowa – linie: 3, 13, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04da8245fdbee79ebdc81ab0202402de = L.circleMarker(
+                [50.0388375, 19.9647335],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_04da8245fdbee79ebdc81ab0202402de.bindTooltip(
+                `<div>
+                     Cmentarz Podgórski – linie: 3, 13, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e110555f32d8958fc0c4526aa85d1f15 = L.circleMarker(
+                [50.042139, 19.961074],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e110555f32d8958fc0c4526aa85d1f15.bindTooltip(
+                `<div>
+                     Podgórze SKA – linie: 3, 13, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e1fbda99c7c87e96f52ad1b9e99d6eb = L.circleMarker(
+                [50.0466605, 19.955064],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4e1fbda99c7c87e96f52ad1b9e99d6eb.bindTooltip(
+                `<div>
+                     Plac Bohaterów Getta – linie: 3, 22, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a658e2680a764eb54b69704ba2d2ca6 = L.circleMarker(
+                [50.051273, 19.9509465],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9a658e2680a764eb54b69704ba2d2ca6.bindTooltip(
+                `<div>
+                     św. Wawrzyńca – linie: 3, 22, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ecdbf2b441da2775b964a818689e9c7f = L.circleMarker(
+                [50.053548, 19.948504],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_ecdbf2b441da2775b964a818689e9c7f.bindTooltip(
+                `<div>
+                     Miodowa – linie: 3, 22, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98794d249a3cd29f97c37b3bb907ad7f = L.circleMarker(
+                [50.06464975, 19.9450517499999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_98794d249a3cd29f97c37b3bb907ad7f.bindTooltip(
+                `<div>
+                     Teatr Słowackiego – linie: 3, 4, 8, 14, 18, 20, 24, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68c298e8a3055e104608387b09100f21 = L.circleMarker(
+                [50.0678285, 19.945381],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_68c298e8a3055e104608387b09100f21.bindTooltip(
+                `<div>
+                     Dworzec Główny Zachód – linie: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83b84df5c2a89fd06c42934d282cd880 = L.circleMarker(
+                [50.0710865, 19.9450522499999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_83b84df5c2a89fd06c42934d282cd880.bindTooltip(
+                `<div>
+                     Politechnika – linie: 3, 5, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c513a9e15fa27f5270f14ae932dc564 = L.circleMarker(
+                [50.07530066666667, 19.94011733333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9c513a9e15fa27f5270f14ae932dc564.bindTooltip(
+                `<div>
+                     Dworzec Towarowy – linie: 3, 5, 14, 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b150302d6e3ef626e3a521e58730f7fe = L.circleMarker(
+                [50.0807095, 19.937802],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_b150302d6e3ef626e3a521e58730f7fe.bindTooltip(
+                `<div>
+                     Szpital Narutowicza – linie: 3, 5, 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afd254e9b6fe8ef12a2ee338e5929775 = L.circleMarker(
+                [50.0841875, 19.9338715],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_afd254e9b6fe8ef12a2ee338e5929775.bindTooltip(
+                `<div>
+                     Bratysławska – linie: 3, 5, 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52b39a9df17d009160fb024cfd3fd3a1 = L.circleMarker(
+                [50.08869966666666, 19.932395333333332],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_52b39a9df17d009160fb024cfd3fd3a1.bindTooltip(
+                `<div>
+                     Krowodrza Górka P+R – linie: 3, 5, 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bd90f2647fd89004da589336225331a = L.circleMarker(
+                [50.08735, 20.059649999999998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4bd90f2647fd89004da589336225331a.bindTooltip(
+                `<div>
+                     Grodzki Urząd Pracy – linie: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8045ccaca214b828a1a11f1a63df7d1a = L.circleMarker(
+                [50.0877045, 20.064344499999997],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_8045ccaca214b828a1a11f1a63df7d1a.bindTooltip(
+                `<div>
+                     Elektromontaż – linie: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31edcc4ad4f913a8c4c84cc45189723f = L.circleMarker(
+                [50.083559, 20.065577],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_31edcc4ad4f913a8c4c84cc45189723f.bindTooltip(
+                `<div>
+                     Zajezdnia Nowa Huta – linie: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd47c59f2d8a065655f5aba771744341 = L.circleMarker(
+                [50.07922333333333, 20.065642333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_dd47c59f2d8a065655f5aba771744341.bindTooltip(
+                `<div>
+                     Kombinat – linie: 4, 21, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a84ce337f1c12de2977ee5ab051d5b74 = L.circleMarker(
+                [50.076195, 20.0524635],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_a84ce337f1c12de2977ee5ab051d5b74.bindTooltip(
+                `<div>
+                     Zalew Nowohucki – linie: 4, 21, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44862fd320521d6e69dd03a9c2bba7ea = L.circleMarker(
+                [50.0747195, 20.046887],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_44862fd320521d6e69dd03a9c2bba7ea.bindTooltip(
+                `<div>
+                     Struga – linie: 4, 21, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7eec073e3acfe81b62420b12accafabf = L.circleMarker(
+                [50.072126, 20.037350250000003],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_7eec073e3acfe81b62420b12accafabf.bindTooltip(
+                `<div>
+                     Plac Centralny im. R.Reagana – linie: 4, 10, 21, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a27536f2a377efbbb294e20f14695242 = L.circleMarker(
+                [50.0722845, 20.0291585],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_a27536f2a377efbbb294e20f14695242.bindTooltip(
+                `<div>
+                     Os. Kolorowe – linie: 4, 10, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_503b29549dd42e5b696c746e58039093 = L.circleMarker(
+                [50.074014, 20.0113655],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_503b29549dd42e5b696c746e58039093.bindTooltip(
+                `<div>
+                     Czyżyny – linie: 4, 5, 9, 10, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb4cf4e524d4eb6c88d10b5bd5365e6f = L.circleMarker(
+                [50.0742875, 20.0046685],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_eb4cf4e524d4eb6c88d10b5bd5365e6f.bindTooltip(
+                `<div>
+                     Stella-Sawickiego – linie: 4, 5, 9, 10, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f62c8c15685e6546ea1705696388874 = L.circleMarker(
+                [50.073991, 19.9987475],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_6f62c8c15685e6546ea1705696388874.bindTooltip(
+                `<div>
+                     AKF / PK – linie: 4, 5, 9, 10, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e404d43f654b28b75765a93c329fb624 = L.circleMarker(
+                [50.0735295, 19.990363],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e404d43f654b28b75765a93c329fb624.bindTooltip(
+                `<div>
+                     Muzeum Lotnictwa Polskiego – linie: 4, 5, 9, 10, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_910742797bf84a3041d8f140f7515f02 = L.circleMarker(
+                [50.067719, 19.9775915],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_910742797bf84a3041d8f140f7515f02.bindTooltip(
+                `<div>
+                     Białucha – linie: 4, 5, 9, 10, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a53eb689eb13860fd65a1adb51dea4bf = L.circleMarker(
+                [50.0665315, 19.969834],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_a53eb689eb13860fd65a1adb51dea4bf.bindTooltip(
+                `<div>
+                     Cystersów – linie: 4, 5, 9, 10, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84e5aa84ec251177a3411bb4707e8765 = L.circleMarker(
+                [50.0654762, 19.959377],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_84e5aa84ec251177a3411bb4707e8765.bindTooltip(
+                `<div>
+                     Rondo Mogilskie – linie: 4, 5, 9, 10, 14, 20, 50, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_628fb725b5ad673f928d631e4f9d0ee9 = L.circleMarker(
+                [50.06522266666666, 19.9516065],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_628fb725b5ad673f928d631e4f9d0ee9.bindTooltip(
+                `<div>
+                     Lubicz – linie: 4, 14, 20, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cff59f0ce75ed1bd90280c64b7c837f0 = L.circleMarker(
+                [50.0664023333333, 19.93874433333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_cff59f0ce75ed1bd90280c64b7c837f0.bindTooltip(
+                `<div>
+                     Stary Kleparz – linie: 4, 8, 14, 18, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c4d31defb258836a1c0a48428589963 = L.circleMarker(
+                [50.0637805, 19.932976],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_7c4d31defb258836a1c0a48428589963.bindTooltip(
+                `<div>
+                     Teatr Bagatela – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52ff132372081012665cad752495c8df = L.circleMarker(
+                [50.0667945, 19.9291345],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_52ff132372081012665cad752495c8df.bindTooltip(
+                `<div>
+                     Stefana Batorego – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbef32422bce27c4d74f2479f5a48d93 = L.circleMarker(
+                [50.0691565, 19.926439],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bbef32422bce27c4d74f2479f5a48d93.bindTooltip(
+                `<div>
+                     Plac Inwalidów – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03d8db4c4351e725dfd4c9f6883c85d5 = L.circleMarker(
+                [50.071918, 19.919502],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_03d8db4c4351e725dfd4c9f6883c85d5.bindTooltip(
+                `<div>
+                     Urzędnicza – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78226d56437ea59dbc4cbd2540e81f3a = L.circleMarker(
+                [50.072976, 19.91556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_78226d56437ea59dbc4cbd2540e81f3a.bindTooltip(
+                `<div>
+                     Biprostal – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85a8d0ddd4d8336a3cc82407a6acb6e8 = L.circleMarker(
+                [50.0741915, 19.910391],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_85a8d0ddd4d8336a3cc82407a6acb6e8.bindTooltip(
+                `<div>
+                     UKEN – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fb188a5df8355ab2a29ea90dd82a158 = L.circleMarker(
+                [50.075616, 19.9063225],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_0fb188a5df8355ab2a29ea90dd82a158.bindTooltip(
+                `<div>
+                     Głowackiego – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b01069c564919697b0e626e823bca11 = L.circleMarker(
+                [50.0776105, 19.90107566666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_0b01069c564919697b0e626e823bca11.bindTooltip(
+                `<div>
+                     Bronowice – linie: 4, 8, 20, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd18bbaed1b4b3e02efafc0775e9bb81 = L.circleMarker(
+                [50.0790455, 19.8972805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bd18bbaed1b4b3e02efafc0775e9bb81.bindTooltip(
+                `<div>
+                     Wesele – linie: 4, 8, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_345d67e10466739cea23d94fad2a5ae4 = L.circleMarker(
+                [50.0814275, 19.8891455],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_345d67e10466739cea23d94fad2a5ae4.bindTooltip(
+                `<div>
+                     Bronowice SKA – linie: 4, 8, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df4535d4ed4062815f8b97ee28a1e417 = L.circleMarker(
+                [50.08179, 19.88192],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_df4535d4ed4062815f8b97ee28a1e417.bindTooltip(
+                `<div>
+                     Bronowice Małe – linie: 4, 8, 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a28f6d94b496d3b9c922b5a75d64684 = L.circleMarker(
+                [50.072026, 19.985007],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_5a28f6d94b496d3b9c922b5a75d64684.bindTooltip(
+                `<div>
+                     TAURON Arena Kraków Wieczysta – linie: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_478c8e8c6b420a2b332b23a27724d67d = L.circleMarker(
+                [50.0682285, 19.947645],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_478c8e8c6b420a2b332b23a27724d67d.bindTooltip(
+                `<div>
+                     Dworzec Główny Tunel – linie: 5, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00787952bb85230f56d69a30dec91670 = L.circleMarker(
+                [50.013101, 19.927021],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_00787952bb85230f56d69a30dec91670.bindTooltip(
+                `<div>
+                     Borek Fałęcki – linie: 8, 11, 22, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f34905dce56ae12450d9254d00086d8 = L.circleMarker(
+                [50.014576, 19.927837],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_8f34905dce56ae12450d9254d00086d8.bindTooltip(
+                `<div>
+                     Solvay – linie: 8, 11, 22, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c42bacf90b4c513618037d36df71ef9 = L.circleMarker(
+                [50.0161555, 19.9295865],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_6c42bacf90b4c513618037d36df71ef9.bindTooltip(
+                `<div>
+                     Kościuszkowców – linie: 8, 11, 22, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bca0e5eeb78a69d2f5fab52ac1f1b6b5 = L.circleMarker(
+                [50.02118325, 19.9322625],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bca0e5eeb78a69d2f5fab52ac1f1b6b5.bindTooltip(
+                `<div>
+                     Łagiewniki SKA – linie: 8, 10, 11, 22, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4304da1781e933a51ad46cd38492af45 = L.circleMarker(
+                [50.0300595, 19.93620850000001],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4304da1781e933a51ad46cd38492af45.bindTooltip(
+                `<div>
+                     Łagiewniki – linie: 8, 10, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_478031945de40cac9c08f810ef103665 = L.circleMarker(
+                [50.033297, 19.938543],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_478031945de40cac9c08f810ef103665.bindTooltip(
+                `<div>
+                     Rzemieślnicza – linie: 8, 10, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6cded06f3c8c57c6bd13c85b71da5bc = L.circleMarker(
+                [50.036443, 19.940579],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_f6cded06f3c8c57c6bd13c85b71da5bc.bindTooltip(
+                `<div>
+                     Rondo Matecznego – linie: 8, 10, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_435592d3ad7022ff1298f016d458b978 = L.circleMarker(
+                [50.0415625, 19.9431905],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_435592d3ad7022ff1298f016d458b978.bindTooltip(
+                `<div>
+                     Smolki – linie: 8, 10, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0553b61ea544649a5d234d64afd05e3 = L.circleMarker(
+                [50.043896, 19.946986666666668],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_f0553b61ea544649a5d234d64afd05e3.bindTooltip(
+                `<div>
+                     Korona – linie: 8, 10, 13, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b07db0f3f98a72347e4d97445f58ef8 = L.circleMarker(
+                [50.048071, 19.943437],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_6b07db0f3f98a72347e4d97445f58ef8.bindTooltip(
+                `<div>
+                     Plac Wolnica – linie: 8, 10, 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_279c161c46d21f8a8494296f111841fa = L.circleMarker(
+                [50.05172866666666, 19.9418806666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_279c161c46d21f8a8494296f111841fa.bindTooltip(
+                `<div>
+                     Stradom – linie: 8, 10, 13, 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46affea7c71053a8b445a5d3befb345d = L.circleMarker(
+                [50.054407, 19.9394625],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_46affea7c71053a8b445a5d3befb345d.bindTooltip(
+                `<div>
+                     Wawel – linie: 8, 13, 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cd0bf680d088b6e1e3c9d35f2792010 = L.circleMarker(
+                [50.0900595, 20.021375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_2cd0bf680d088b6e1e3c9d35f2792010.bindTooltip(
+                `<div>
+                     Rondo Hipokratesa – linie: 9, 14, 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41877937b384209c468a13578b38ed63 = L.circleMarker(
+                [50.0844545, 20.02068],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_41877937b384209c468a13578b38ed63.bindTooltip(
+                `<div>
+                     DH Wanda – linie: 9, 14, 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55d19f0627045afc95c47f779b1a4336 = L.circleMarker(
+                [50.0498255, 19.964682],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_55d19f0627045afc95c47f779b1a4336.bindTooltip(
+                `<div>
+                     Zabłocie – linie: 9, 20, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53145c6025fe2f482ae56d21fe45fbba = L.circleMarker(
+                [50.048996, 19.967597],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_53145c6025fe2f482ae56d21fe45fbba.bindTooltip(
+                `<div>
+                     Klimeckiego – linie: 9, 20, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb60fae127acc353b158503812b38371 = L.circleMarker(
+                [50.044552, 19.9735755],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bb60fae127acc353b158503812b38371.bindTooltip(
+                `<div>
+                     Kuklińskiego – linie: 9, 20, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21d3d1012de1aea4fe55c610a6b51b25 = L.circleMarker(
+                [50.040638, 19.978084],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_21d3d1012de1aea4fe55c610a6b51b25.bindTooltip(
+                `<div>
+                     Gromadzka – linie: 9, 20, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_774cde87816321b9c319f5b4b09d0995 = L.circleMarker(
+                [50.04033866666666, 19.98299666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_774cde87816321b9c319f5b4b09d0995.bindTooltip(
+                `<div>
+                     Lipska – linie: 9, 11, 20, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0003df664313706b77364b67803eeca4 = L.circleMarker(
+                [50.033512, 19.977071],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_0003df664313706b77364b67803eeca4.bindTooltip(
+                `<div>
+                     Dworzec Płaszów Estakada – linie: 9, 11, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a5176f41ade9dbc1036851f12b01bb2 = L.circleMarker(
+                [50.072893, 20.11689],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1a5176f41ade9dbc1036851f12b01bb2.bindTooltip(
+                `<div>
+                     Pleszów – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bace80f0fa2998235f26ea51afd1954 = L.circleMarker(
+                [50.071926, 20.104577],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_2bace80f0fa2998235f26ea51afd1954.bindTooltip(
+                `<div>
+                     Koksochemia – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80d870a496b762987c15f79d8c04d43d = L.circleMarker(
+                [50.0688356, 20.0990645],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_80d870a496b762987c15f79d8c04d43d.bindTooltip(
+                `<div>
+                     Meksyk – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5119d2f4a4a99b4b32473b042e2e388 = L.circleMarker(
+                [50.0691235, 20.091682],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_f5119d2f4a4a99b4b32473b042e2e388.bindTooltip(
+                `<div>
+                     Brama nr 5 – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e17c297fb81a572ded7fee8e9c88d97 = L.circleMarker(
+                [50.064674999999994, 20.08463],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_0e17c297fb81a572ded7fee8e9c88d97.bindTooltip(
+                `<div>
+                     Giedroycia – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59b3e48096793f755294945530341c4e = L.circleMarker(
+                [50.064927, 20.074984],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_59b3e48096793f755294945530341c4e.bindTooltip(
+                `<div>
+                     Brama nr 4 – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7efd0e255e76186f4c1cb8376c98ab3 = L.circleMarker(
+                [50.0665265, 20.0710595],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e7efd0e255e76186f4c1cb8376c98ab3.bindTooltip(
+                `<div>
+                     Fort Mogiła – linie: 10, 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94937564d436d0f936c64a71585ebf13 = L.circleMarker(
+                [50.0677575, 20.0649305],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_94937564d436d0f936c64a71585ebf13.bindTooltip(
+                `<div>
+                     Bardosa – linie: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc73afb4f822a3458abe154ea337a0a9 = L.circleMarker(
+                [50.067491, 20.059864],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_dc73afb4f822a3458abe154ea337a0a9.bindTooltip(
+                `<div>
+                     Suche Stawy – linie: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf178aab3420bef53110b41fbe991d5f = L.circleMarker(
+                [50.0685425, 20.052587],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bf178aab3420bef53110b41fbe991d5f.bindTooltip(
+                `<div>
+                     Klasztorna – linie: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e9e1720b57737f8d7b87fb00dd1a639 = L.circleMarker(
+                [50.0697585, 20.0458415],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1e9e1720b57737f8d7b87fb00dd1a639.bindTooltip(
+                `<div>
+                     Os. Na Skarpie – linie: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b656037b940d16e6da1ec7bb66fcff98 = L.circleMarker(
+                [50.024577, 19.933922],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_b656037b940d16e6da1ec7bb66fcff98.bindTooltip(
+                `<div>
+                     Łagiewniki ZUS – linie: 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3327a986192803985844f83166781e32 = L.circleMarker(
+                [50.01778, 19.936295],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_3327a986192803985844f83166781e32.bindTooltip(
+                `<div>
+                     Sanktuarium Bożego Miłosierdzia – linie: 10, 11, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80b67290168b7583cd516e80508c7be1 = L.circleMarker(
+                [50.015085, 19.94437],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_80b67290168b7583cd516e80508c7be1.bindTooltip(
+                `<div>
+                     Turowicza – linie: 10, 11, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9979ba3fe88e7ba86ae80f75365e586 = L.circleMarker(
+                [50.01380749999999, 19.9492075],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_a9979ba3fe88e7ba86ae80f75365e586.bindTooltip(
+                `<div>
+                     Kurdwanów P+R – linie: 10, 11, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ad9936d889521fb93efe68b148b51aa = L.circleMarker(
+                [50.040064, 20.001498],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9ad9936d889521fb93efe68b148b51aa.bindTooltip(
+                `<div>
+                     Mały Płaszów P+R – linie: 11, 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c85705f44f4f2b90427b061f5785801f = L.circleMarker(
+                [50.0404875, 19.9917585],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_c85705f44f4f2b90427b061f5785801f.bindTooltip(
+                `<div>
+                     Rzebika – linie: 11, 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78ce811ce6f705abd16e8097e199cbdd = L.circleMarker(
+                [50.0183485, 19.9775505],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_78ce811ce6f705abd16e8097e199cbdd.bindTooltip(
+                `<div>
+                     Dauna – linie: 11, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2022722f06eb383f156fa42fb596d7a8 = L.circleMarker(
+                [50.0154645, 19.971589],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_2022722f06eb383f156fa42fb596d7a8.bindTooltip(
+                `<div>
+                     Piaski Nowe – linie: 11, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da11b8fb2c64f5a9650132acae515f92 = L.circleMarker(
+                [50.013446, 19.9646595],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_da11b8fb2c64f5a9650132acae515f92.bindTooltip(
+                `<div>
+                     Nowosądecka – linie: 11, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e1526d80890b4507f40e97c26188378 = L.circleMarker(
+                [50.012381, 19.9563235],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9e1526d80890b4507f40e97c26188378.bindTooltip(
+                `<div>
+                     Witosa – linie: 11, 24, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d311d683ee971273938c586dfd5288c5 = L.circleMarker(
+                [50.045068, 19.9553965],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_d311d683ee971273938c586dfd5288c5.bindTooltip(
+                `<div>
+                     Limanowskiego – linie: 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ec38a3e11915a304dfe016d587e5e06 = L.circleMarker(
+                [50.0585565, 19.940913],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_1ec38a3e11915a304dfe016d587e5e06.bindTooltip(
+                `<div>
+                     św. Gertrudy – linie: 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f0714affa58c2dc2f85932c094e3fa4 = L.circleMarker(
+                [50.094406, 20.000154],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_3f0714affa58c2dc2f85932c094e3fa4.bindTooltip(
+                `<div>
+                     Miśnieńska – linie: 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60a8ea63a9e33e8f98ca8a17b8aee064 = L.circleMarker(
+                [50.093708, 20.0044055],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_60a8ea63a9e33e8f98ca8a17b8aee064.bindTooltip(
+                `<div>
+                     Os. Złotego Wieku – linie: 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d92b7b6564473c517538200659eaae2 = L.circleMarker(
+                [50.0943635, 20.0112615],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4d92b7b6564473c517538200659eaae2.bindTooltip(
+                `<div>
+                     Rondo Piastowskie – linie: 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbb17de864bce9f5485135e573422963 = L.circleMarker(
+                [50.0923595, 20.0157645],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_dbb17de864bce9f5485135e573422963.bindTooltip(
+                `<div>
+                     Dunikowskiego – linie: 14, 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ec1906af9e4b3a150a4938db47d0b01 = L.circleMarker(
+                [50.069662, 19.9375175],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_6ec1906af9e4b3a150a4938db47d0b01.bindTooltip(
+                `<div>
+                     Pędzichów – linie: 14, 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd4fe52f2de2cb8c49798c4335f705fe = L.circleMarker(
+                [50.073499, 19.936541],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_dd4fe52f2de2cb8c49798c4335f705fe.bindTooltip(
+                `<div>
+                     Nowy Kleparz – linie: 14, 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f78772f2aed521660605dfdfac3ffccb = L.circleMarker(
+                [50.017986, 19.889106],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_f78772f2aed521660605dfdfac3ffccb.bindTooltip(
+                `<div>
+                     Czerwone Maki P+R – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1ba5d6204553c6a71e38688eeb2eb9e = L.circleMarker(
+                [50.020601, 19.8978135],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_b1ba5d6204553c6a71e38688eeb2eb9e.bindTooltip(
+                `<div>
+                     Kampus UP JP II – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e4bb6a22493652da2b8e9aa27e99660 = L.circleMarker(
+                [50.0243645, 19.90174],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9e4bb6a22493652da2b8e9aa27e99660.bindTooltip(
+                `<div>
+                     Kampus UJ – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12694b457bf64944b2415235c29751a5 = L.circleMarker(
+                [50.027111, 19.905653],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_12694b457bf64944b2415235c29751a5.bindTooltip(
+                `<div>
+                     Ruczaj – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7eb572f0c79fcf5abf862da40c174129 = L.circleMarker(
+                [50.029969, 19.912678],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_7eb572f0c79fcf5abf862da40c174129.bindTooltip(
+                `<div>
+                     Norymberska – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f5d82cb5b3d24d2ff8e23d58255121a = L.circleMarker(
+                [50.03173, 19.920687],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_2f5d82cb5b3d24d2ff8e23d58255121a.bindTooltip(
+                `<div>
+                     Grota-Roweckiego – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72fc326347ebdab59044dc3481593b62 = L.circleMarker(
+                [50.030765, 19.924839],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_72fc326347ebdab59044dc3481593b62.bindTooltip(
+                `<div>
+                     Lipińskiego – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_845b40cc71a563b4f0893bc39aca771c = L.circleMarker(
+                [50.0345318, 19.9260281],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_845b40cc71a563b4f0893bc39aca771c.bindTooltip(
+                `<div>
+                     Kobierzyńska – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da169c972d886dfbe07bec379743df16 = L.circleMarker(
+                [50.0407784, 19.9246065],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_da169c972d886dfbe07bec379743df16.bindTooltip(
+                `<div>
+                     Słomiana – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_397dd9218cedf6b30e9d36b54c376282 = L.circleMarker(
+                [50.0449055, 19.9221572],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_397dd9218cedf6b30e9d36b54c376282.bindTooltip(
+                `<div>
+                     Kapelanka – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fd1189ea24cc3e7675c5f1e060e35fb = L.circleMarker(
+                [50.0467011, 19.92548],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_7fd1189ea24cc3e7675c5f1e060e35fb.bindTooltip(
+                `<div>
+                     Szwedzka – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e296c3033ba76c23cd04ea8e0410a772 = L.circleMarker(
+                [50.0485739, 19.9312312],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_e296c3033ba76c23cd04ea8e0410a772.bindTooltip(
+                `<div>
+                     Rondo Grunwaldzkie – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93836c75fdea3d45856c4b8ad1e9f9ed = L.circleMarker(
+                [50.050482, 19.9380481],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_93836c75fdea3d45856c4b8ad1e9f9ed.bindTooltip(
+                `<div>
+                     Orzeszkowej – linie: 18, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70038192d7c0f8f2cb675b6f5a66a90c = L.circleMarker(
+                [50.093975, 19.92994],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_70038192d7c0f8f2cb675b6f5a66a90c.bindTooltip(
+                `<div>
+                     Pachońskiego P+R – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c9d55f683b51d410be21906544d7994 = L.circleMarker(
+                [50.09492, 19.93503],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_3c9d55f683b51d410be21906544d7994.bindTooltip(
+                `<div>
+                     Białoprądnicka – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1d9556d93418fff5b780be1e6099ecb = L.circleMarker(
+                [50.096075, 19.94172],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_b1d9556d93418fff5b780be1e6099ecb.bindTooltip(
+                `<div>
+                     Górnickiego – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcc38b07073ed107aaa5c245cd5919ff = L.circleMarker(
+                [50.09591, 19.947835],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_bcc38b07073ed107aaa5c245cd5919ff.bindTooltip(
+                `<div>
+                     Siewna Wiadukt – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03886cbd36667241acfe811578c9259d = L.circleMarker(
+                [50.095095, 19.9542],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_03886cbd36667241acfe811578c9259d.bindTooltip(
+                `<div>
+                     Bociana – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93e2a6c4371d1438a4092060310a8f5d = L.circleMarker(
+                [50.097835, 19.956065],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_93e2a6c4371d1438a4092060310a8f5d.bindTooltip(
+                `<div>
+                     Kuźnicy Kołłątajowskiej – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27b067f055a06b4f8eb14f122e57a6c1 = L.circleMarker(
+                [50.101765, 19.957365],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_27b067f055a06b4f8eb14f122e57a6c1.bindTooltip(
+                `<div>
+                     Papierni Prądnickich – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57169efb13f14721013102c84712b151 = L.circleMarker(
+                [50.104864, 19.96247],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_57169efb13f14721013102c84712b151.bindTooltip(
+                `<div>
+                     Górka Narodowa P+R – linie: 18, 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a08ee03d34a141fbc4e35f40e5123a8 = L.circleMarker(
+                [50.069839, 20.066868],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4a08ee03d34a141fbc4e35f40e5123a8.bindTooltip(
+                `<div>
+                     Kopiec Wandy – linie: 21, 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b97abdaaccaa60339253e8dce41762b = L.circleMarker(
+                [50.0766885, 20.0311815],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_4b97abdaaccaa60339253e8dce41762b.bindTooltip(
+                `<div>
+                     Os. Zgody – linie: 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_307d6a06019c179d98cea1623420e862 = L.circleMarker(
+                [50.0957755, 20.0126755],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_307d6a06019c179d98cea1623420e862.bindTooltip(
+                `<div>
+                     Kleeberga – linie: 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9356830e0362ff660f1e1bb107d7fc2f = L.circleMarker(
+                [50.098194, 20.0130345],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_9356830e0362ff660f1e1bb107d7fc2f.bindTooltip(
+                `<div>
+                     Piasta Kołodzieja – linie: 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54cc5fbad447e8e4998235bbcb5f40e7 = L.circleMarker(
+                [50.101977, 20.012058],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1}
+            ).addTo(map_ee5fd480e73b73b320df9703e1428639);
+        
+    
+            circle_marker_54cc5fbad447e8e4998235bbcb5f40e7.bindTooltip(
+                `<div>
+                     Os. Piastów – linie: 21, 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

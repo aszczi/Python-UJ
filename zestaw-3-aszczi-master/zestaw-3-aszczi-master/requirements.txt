@@ -1,0 +1,6 @@
+pytest
+gmpy2
+folium
+yfinance
+pandas
+numpy
